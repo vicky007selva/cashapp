@@ -1,7 +1,7 @@
 {
   "name": "cashapp",
   "version": "0.1.0",
-  "homepage": "./",
+  "homepage": "https://vicky007selva.github.io/cashapp/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
