@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
-     <BrowserRouter basename='mercorTest'>
+     <BrowserRouter basename='cashapp'>
       <Routes>
         <Route path="/" element={<App />}>
            
