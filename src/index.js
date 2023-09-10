@@ -17,7 +17,7 @@ root.render(
      <BrowserRouter basename='cashapp'>
       <Routes>
         <Route path="/" element={<App />}>
-           
+        <Route index element={< App/>} />
         </Route>
       </Routes>
       </BrowserRouter>
