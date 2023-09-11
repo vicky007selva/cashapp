@@ -26,12 +26,12 @@ const CenterRow = () => {
     console.log('largescreen'+largescreen)
     return (
         <Grid sx={{position:'relative'}}>
-            <Grid sx={{ marginTop: phone?'10rem':'6vw' }}>
+            <Grid sx={{ marginTop: phone?'0vh':'6vw' }}>
                 <Typography sx={{
                     color: '#FFF',
                     textAlign: 'center',
                     fontFamily: 'Helvetica Neue',
-                    fontSize: phone?'20rem':'12.0625rem',
+                    fontSize: phone?'6rem':'12.0625rem',
                     fontStyle: 'normal',
                     fontWeight: 800,
                     lineHeight: '10.375rem', /* 86.01% */
@@ -43,7 +43,7 @@ const CenterRow = () => {
             </Grid>
 
             <Grid >
-                <img style={{ width: phone?'30vw':'23vw', height: phone?'40rem':'', marginLeft: phone?'28rem':'39vw', position: 'absolute', top: phone?'36rem':'-4vh' }} src={introphone} alt="phone" />
+                <img style={{ width: phone?'40vw':'23vw', marginLeft: phone?'30vw':'39vw', position: 'absolute', top: phone?'5vh':'-4vh' }} src={introphone} alt="phone" />
             </Grid>
 
             <Grid >
@@ -51,15 +51,15 @@ const CenterRow = () => {
                     color: '#FFF',
                     textAlign: 'center',
                     fontFamily: 'Helvetica Neue',
-                    fontSize: phone?'20rem':'12.0625rem',
+                    fontSize: phone?'6rem':'12.0625rem',
                     fontStyle: 'normal',
                     fontWeight: 800,
                     lineHeight: '10.375rem', /* 86.01% */
                     letterSpacing: '0.03125rem',
                     textTransform: 'uppercase',
                     position: 'absolute',
-                    top: phone?'55rem':'',
-                    left: '36vw',
+                    top: phone?'12vh':'',
+                    left: phone?'22vw':'36vw',
                 }}>
                     APP
                 </Typography>

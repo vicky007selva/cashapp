@@ -30,26 +30,26 @@ const AdvertisementPage = () => {
 
 
   return (
-    <Grid direction={'column'} justifyContent={'space-between'} sx={{width:'100vw'}}>
+    <Grid direction={'column'} justifyContent={'space-between'} sx={{maxWidth:'100%'}}>
     <Grid container item direction={'row'}>
        <Firstrow/>
     </Grid>
     <Grid item>
-      <img style={{ marginTop:phone?'10rem':'',marginLeft: '8vw', width: phone?'15rem':'5vw', height:phone?'15rem': ''}} src={introcube} alt='cube' />
+      <img style={{marginTop:phone?'10vh':'', marginLeft: '8vw', width: phone?'20vw':'5vw'}} src={introcube} alt='cube' />
     </Grid>
     <Grid>
-      <img  style={{width:phone?'20rem': '14vw',position:'absolute',top:phone?'12rem':'8vh',right:phone?'':'18vw'}} src={introstairs} alt='stairs'/>
+      <img  style={{width:phone?'20vw': '14vw',position:'absolute',top:phone?'18vh':'8vh',right:phone?'12vw':'18vw'}} src={introstairs} alt='stairs'/>
     </Grid>
 
     <CenterRow/>
    
    
     <Grid>
-      <img style={{width:phone?'20rem': '13vw',height: phone?'15rem':'',position:'absolute',bottom:phone?'-35rem':'5vh',left:phone?'5rem':'8vw'}} src={introhalfcubes} alt='intropillar'/>
+      <img style={{width:phone?'20vw': '13vw',position:'absolute',bottom:phone?'27vh':'5vh',left:phone?'7vw':'8vw'}} src={introhalfcubes} alt='intropillar'/>
     </Grid>
 
     <Grid>
-      <img style={{width:phone?'20rem':'',height: '30vh',position:'absolute',right:'25vw',bottom:phone?'-35rem':'-2vh'}} src={intropillar} alt='introcubes'/>
+      <img style={{width:phone?'30vw':'',position:'absolute',right:phone?'8vw':'25vw',bottom:phone?'26vh':'-2vh'}} src={intropillar} alt='introcubes'/>
     </Grid>
 
     <Footer/>

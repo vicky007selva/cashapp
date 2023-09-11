@@ -20,7 +20,9 @@ const Firstrow = () => {
 
   return (
     <>
-    <img style={{ width: phone?'20rem':'3vw', height: phone?'8rem':'', padding: '1rem' }} src={dollar} alt="dollar" />
+    <img style={{ width: phone?'6vw':'3vw',
+    marginTop:'2.5vh',
+    marginLeft:phone?'1vw':'' }} src={dollar} alt="dollar" />
     <ResponsiveAppBar />
     </>
   )
