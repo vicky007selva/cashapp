@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cashapp/static/css/main.e6c13ad2.css",
-    "main.js": "/cashapp/static/js/main.77ee125c.js",
+    "main.js": "/cashapp/static/js/main.3f5b3703.js",
     "static/js/787.fe76f0f0.chunk.js": "/cashapp/static/js/787.fe76f0f0.chunk.js",
     "static/media/introphone.png": "/cashapp/static/media/introphone.38e2d0224fd5c4e96fa7.png",
     "static/media/intropillar.png": "/cashapp/static/media/intropillar.303f29ec0b4c225aaa46.png",
@@ -16,11 +16,11 @@
     "static/media/Downarrow.svg": "/cashapp/static/media/Downarrow.aa855b2860c5bb6e71f20ab1824540fc.svg",
     "static/media/frame.svg": "/cashapp/static/media/frame.2dc437389ddd1df82c2ce1e7171b980b.svg",
     "main.e6c13ad2.css.map": "/cashapp/static/css/main.e6c13ad2.css.map",
-    "main.77ee125c.js.map": "/cashapp/static/js/main.77ee125c.js.map",
+    "main.3f5b3703.js.map": "/cashapp/static/js/main.3f5b3703.js.map",
     "787.fe76f0f0.chunk.js.map": "/cashapp/static/js/787.fe76f0f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.77ee125c.js"
+    "static/js/main.3f5b3703.js"
   ]
 }
