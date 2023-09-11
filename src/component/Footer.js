@@ -89,13 +89,13 @@ const Footer = () => {
                 <Typography sx={{
                     color: '#B6B6B6',
                     fontFamily: 'Mulish',
-                    fontSize: phone ? '0.7rem' : tablet ? '1rem' : smallphone ? '0.4rem' : '0.625rem',
+                    fontSize: phone ? '0.6rem' : tablet ? '1rem' : smallphone ? '0.4rem' : '0.625rem',
                     fontStyle: 'normal',
                     fontWeight: 200,
                     lineHeight: phone ? '1rem' : tablet ? '1rem' : '0.8125rem',
                     position: 'absolute',
-                    right: phone ? '5vw' : tablet ? '17vw' : smallphone ? '18vw' : '22vw',
-                    bottom: phone ? '-15vh' : tablet ? '-10vh' : smallphone ? '4vh' : '2vh',
+                    right: phone ? '8vw' : tablet ? '17vw' : smallphone ? '18vw' : '22vw',
+                    bottom: phone ? '-22vh' : tablet ? '-10vh' : smallphone ? '4vh' : '2vh',
                 }}>
                     Brokerage services by Cash App Investing LLC, member FINRA / SIPC.<br />
                     See our BrokerCheck. Investing involves risk; you may lose money. Bitcoin <br />
@@ -107,7 +107,7 @@ const Footer = () => {
             <Box sx={{
                 display: 'flex', flexDirection: 'row', gap: '1.5vw',
                 marginLeft: phone ? '30vw' : tablet ? '43vw' : smallphone?'25vw':'47vw',
-                marginTop: phone ? '70vh' : tablet ? '55vh' : smallphone?'50vh':'38vh',
+                marginTop: phone ? '80vh' : tablet ? '55vh' : smallphone?'50vh':'38vh',
                 padding: phone || tablet ? '1rem' : smallphone?'1rem': ''
             }}>
                 <img style={{ width: phone ? '2rem' : '' }} src={frame} alt='frame' />
