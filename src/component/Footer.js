@@ -69,11 +69,11 @@ const Footer = () => {
                 </Typography>
             </Box>
 
-            <Box sx={{ padding: '1vw',position:'absolute',left:phone?'41vw':'52vw',bottom:'0vh'}}>
+            <Box sx={{ padding: '1vw',position:'absolute',left:phone?'41vw':'52vw',bottom:'-4vh'}}>
                 <img style={{width: phone?'10vw':'1.125vw'}} src={Downarrow} alt='downArrow'/>
             </Box>
 
-            <Box sx={{ marginRight: '32vw', padding: '1vw' }}>
+            <Box sx={{ marginRight: '32vw', padding: '1vw',width:phone?'100%':''}}>
                 <Typography sx={{
                     color: '#B6B6B6',
                     fontFamily: 'Mulish',
