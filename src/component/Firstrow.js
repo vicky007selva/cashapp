@@ -12,6 +12,7 @@ const Firstrow = () => {
  
 
     const theme = useTheme();
+    const smallphone = useMediaQuery(theme.breakpoints.between('xxs','xs'));
     const phone = useMediaQuery(theme.breakpoints.between('xs','sm'));
     const tablet = useMediaQuery(theme.breakpoints.between('sm','md'));
     const laptop = useMediaQuery(theme.breakpoints.between('md','lg'));
@@ -21,8 +22,8 @@ const Firstrow = () => {
   return (
     <>
     <img style={{ width: phone?'6vw':'3vw',
-    marginTop:'2.5vh',
-    marginLeft:phone?'1vw':'' }} src={dollar} alt="dollar" />
+    marginTop:smallphone?'3vh':'2.5vh',
+    marginLeft:phone?'1vw':smallphone?'3vw':'' }} src={dollar} alt="dollar" />
     <ResponsiveAppBar />
     </>
   )

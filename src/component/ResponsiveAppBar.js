@@ -43,6 +43,7 @@ function HideOnScroll(props) {
 function ResponsiveAppBar() {
 
   const theme = useTheme();
+  const smallphone = useMediaQuery(theme.breakpoints.between('xxs','xs'));
   const phone = useMediaQuery(theme.breakpoints.between('xs', 'sm'));
   const tablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
   const laptop = useMediaQuery(theme.breakpoints.between('md', 'lg'));
@@ -123,7 +124,10 @@ function ResponsiveAppBar() {
               ))}
 
             </Box>
-            <img style={{ width: phone ? '20vw' :tablet?'10vw': '5vw', padding: '1vw' }} src={eye} alt='eye' />
+            <img style={{ 
+              width: phone ? '20vw' :smallphone?'10vw':tablet?'10vw': '5vw',
+               padding: '1vw' }} 
+            src={eye} alt='eye' />
 
           </Toolbar>
         </Container>
