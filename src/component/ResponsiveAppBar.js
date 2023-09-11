@@ -74,7 +74,7 @@ function ResponsiveAppBar() {
                 onClick={handleOpenNavMenu}
                 color="inherit"
               >
-                <MenuIcon sx={{ fontSize: phone ? '12vw' : '' }} />
+                <MenuIcon sx={{ fontSize: phone ? '12vw' :tablet?'8vw': '' }} />
               </IconButton>
               <Menu
                 id="menu-appbar"
@@ -123,7 +123,7 @@ function ResponsiveAppBar() {
               ))}
 
             </Box>
-            <img style={{ width: phone ? '20vw' : '5vw', padding: '1vw' }} src={eye} alt='eye' />
+            <img style={{ width: phone ? '20vw' :tablet?'10vw': '5vw', padding: '1vw' }} src={eye} alt='eye' />
 
           </Toolbar>
         </Container>

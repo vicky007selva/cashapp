@@ -24,9 +24,9 @@ const Footer = () => {
     const largescreen = useMediaQuery(theme.breakpoints.up('xl'));
 
     return (
-        <Grid container item direction={phone?'column':'row'} >
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1vw', marginTop: phone?'35vh':'38vh', padding: phone?'2vw 4vw':'1vw 2vw', position: 'absolute',
-            left:phone?'6vw':'1.5vw',
+        <Grid container item direction={phone||tablet?'column':'row'} >
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1vw', marginTop: phone?'35vh':tablet?'30vh':'38vh', padding: phone?'2vw 4vw':'1vw 2vw', position: 'absolute',
+            left:phone?'6vw':tablet?'30vw':'1.5vw',
             border:'0.1vw solid white',
             borderRadius:phone?'1vw':'0.5vw',
             backgroundColor:'black'
@@ -47,8 +47,8 @@ const Footer = () => {
                 </Typography>
             </Box>
 
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1vw', marginTop: phone?'35vh':'38vh', padding: phone?'2vw 4vw':'1vw 2vw', position: 'absolute',
-            left:phone?'50vw':'15vw',
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1vw', marginTop: phone?'35vh':tablet?'30vh':'38vh', padding: phone?'2vw 4vw':'1vw 2vw', position: 'absolute',
+            left:phone?'50vw':tablet?'50vw':'15vw',
              border:'0.1vw solid white',
              borderRadius:phone?'1vw':'0.5vw',
              backgroundColor:'black'
@@ -69,21 +69,21 @@ const Footer = () => {
                 </Typography>
             </Box>
 
-            <Box sx={{ padding: '1vw',position:'absolute',left:phone?'41vw':'52vw',bottom:'-4vh'}}>
-                <img style={{width: phone?'10vw':'1.125vw'}} src={Downarrow} alt='downArrow'/>
+            <Box sx={{ padding: '1vw',position:'absolute',left:phone?'41vw':tablet?'45vw':'52vw',bottom:phone?'-4vh':tablet?'0vh':'2vh'}}>
+                <img style={{width: phone?'10vw':tablet?'5vw':'1.125vw'}} src={Downarrow} alt='downArrow'/>
             </Box>
 
             <Box sx={{ marginRight: '32vw', padding: '1vw',width:phone?'100%':''}}>
                 <Typography sx={{
                     color: '#B6B6B6',
                     fontFamily: 'Mulish',
-                    fontSize: phone?'0.7rem':'0.625rem',
+                    fontSize: phone?'0.7rem':tablet?'1rem':'0.625rem',
                     fontStyle: 'normal',
                     fontWeight: 200,
-                    lineHeight: phone?'1rem':'0.8125rem',
+                    lineHeight: phone?'1rem':tablet?'1rem':'0.8125rem',
                     position: 'absolute',
-                    right:phone?'5vw':'22vw',
-                    bottom: phone?'-15vh':'2vh',
+                    right:phone?'5vw':tablet?'17vw':'22vw',
+                    bottom: phone?'-15vh':tablet?'-10vh':'2vh',
                 }}>
                     Brokerage services by Cash App Investing LLC, member FINRA / SIPC.<br />
                     See our BrokerCheck. Investing involves risk; you may lose money. Bitcoin <br />
@@ -92,7 +92,7 @@ const Footer = () => {
                     services through Sutton Bank and Lincoln Savings Bank, Members FDIC.
                 </Typography>
             </Box>
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1.5vw', marginLeft: phone?'30vw':'47vw', marginTop: phone?'70vh':'38vh', padding:phone?'1rem':'' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1.5vw', marginLeft: phone?'30vw':tablet?'43vw':'47vw', marginTop: phone?'70vh':tablet?'55vh':'38vh', padding:phone||tablet?'1rem':'' }}>
                 <img style={{width:phone?'2rem':''}} src={frame} alt='frame' />
                 <img style={{width:phone?'2rem':''}} src={twitter} alt='twitter' />
                 <img style={{width:phone?'2rem':''}} src={instagram} alt='instagram' />
