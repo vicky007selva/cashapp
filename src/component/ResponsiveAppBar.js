@@ -125,8 +125,8 @@ function ResponsiveAppBar() {
 
             </Box>
             <img style={{ 
-              width: phone ? '20vw' :smallphone?'10vw':tablet?'10vw': '5vw',
-               padding: '1vw' }} 
+              width: phone ? '15vw' :smallphone?'10vw':tablet?'10vw': '5vw',
+               padding: '1vw',marginRight:phone?'30vw':'' }} 
             src={eye} alt='eye' />
 
           </Toolbar>
