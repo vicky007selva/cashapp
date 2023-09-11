@@ -25,9 +25,11 @@ const Footer = () => {
 
     return (
         <Grid container item direction={'row'} >
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1rem', marginTop: phone?'50rem':'20rem', marginLeft: phone?'8rem':'4rem', padding: phone?'3rem':'1rem', position: 'absolute',
-            left:phone?'8rem':'4rem',
-            border:'0.1rem solid white'
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1vw', marginTop: phone?'50rem':'38vh', padding: phone?'3rem':'1vw 2vw', position: 'absolute',
+            left:phone?'8rem':'1.5vw',
+            border:'0.1vw solid white',
+            borderRadius:'0.5vw',
+            backgroundColor:'black'
         }}>
                 <img src={apple} alt='apple' />
                 <Typography sx={{
@@ -45,9 +47,11 @@ const Footer = () => {
                 </Typography>
             </Box>
 
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1rem', marginTop: phone?'50rem':'20rem', marginLeft: phone?'-3rem': '3rem', padding: phone?'3rem':'1rem', position: 'absolute',
-            left:phone?'45rem':'15rem',
-             border:'0.1rem solid white'
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1vw', marginTop: phone?'50rem':'38vh', padding: phone?'3rem':'1vw 2vw', position: 'absolute',
+            left:phone?'45rem':'15vw',
+             border:'0.1vw solid white',
+             borderRadius:'0.5vw',
+             backgroundColor:'black'
          }} >
                 <img src={googleplay} alt='playstore' />
                 <Typography sx={{
@@ -65,11 +69,11 @@ const Footer = () => {
                 </Typography>
             </Box>
 
-            <Box sx={{ marginTop: phone?'30rem':'20rem', marginLeft: '30rem',padding: '1rem',position:'absolute',left:phone?'4rem':'18rem'}}>
-                <img style={{width: phone?'4rem':'1.125rem',height:phone?'6rem': '1.875rem'}} src={Downarrow} alt='downArrow'/>
+            <Box sx={{ padding: '1vw',position:'absolute',left:phone?'4rem':'52vw',bottom:'2vh'}}>
+                <img style={{width: phone?'4rem':'1.125vw'}} src={Downarrow} alt='downArrow'/>
             </Box>
 
-            <Box sx={{ marginTop:'20rem', marginLeft: '30rem', padding: '1rem' }}>
+            <Box sx={{ marginRight: '32vw', padding: '1vw' }}>
                 <Typography sx={{
                     color: '#B6B6B6',
                     fontFamily: 'Mulish',
@@ -78,8 +82,8 @@ const Footer = () => {
                     fontWeight: 200,
                     lineHeight: phone?'2rem':'0.8125rem',
                     position: 'absolute',
-                    right:phone?'-44rem':'17rem',
-                    bottom: phone?'-75rem':'1.25rem',
+                    right:phone?'-44rem':'22vw',
+                    bottom: phone?'-75rem':'2vh',
                 }}>
                     Brokerage services by Cash App Investing LLC, member FINRA / SIPC.<br />
                     See our BrokerCheck. Investing involves risk; you may lose money. Bitcoin <br />
@@ -88,7 +92,7 @@ const Footer = () => {
                     services through Sutton Bank and Lincoln Savings Bank, Members FDIC.
                 </Typography>
             </Box>
-            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1.5rem', marginLeft: phone?'26rem':'45rem', marginTop: phone?'60rem':'19rem', padding: '1rem' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '1.5vw', marginLeft: phone?'26rem':'47vw', marginTop: phone?'60rem':'38vh' }}>
                 <img style={{width:phone?'5rem':''}} src={frame} alt='frame' />
                 <img style={{width:phone?'5rem':''}} src={twitter} alt='twitter' />
                 <img style={{width:phone?'5rem':''}} src={instagram} alt='instagram' />

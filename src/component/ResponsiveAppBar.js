@@ -90,7 +90,7 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block', ml: '2rem' }}
+                sx={{ my: 2, color: 'white', display: 'block', ml: '2vw' }}
               >
                 <Typography sx={{
                   color: 'weight', fontFamily: 'sans-serif', fontSize: '0.75rem', fontStyle: 'normal', fontWeight: 800,
@@ -103,7 +103,7 @@ function ResponsiveAppBar() {
             ))}
 
           </Box>
-          <img style={{ width: phone ? '8rem' : '3.99981rem', height: phone?'6rem': '2.25rem', padding: '1rem',marginRight:phone?'1rem':'' }} src={eye} alt='eye' />
+          <img style={{ width: phone ? '8rem' : '5vw', height: phone?'6rem':'', padding: '1rem',marginRight:phone?'1rem':'' }} src={eye} alt='eye' />
 
         </Toolbar>
       </Container>

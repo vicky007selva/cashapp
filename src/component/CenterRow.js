@@ -43,7 +43,7 @@ const CenterRow = () => {
             </Grid>
 
             <Grid >
-                <img style={{ width: phone?'30rem':'23.125rem', height: phone?'40rem':'28.31769rem', marginLeft: phone?'28rem':'36.5rem', position: 'absolute', top: phone?'36rem':'12rem' }} src={introphone} alt="phone" />
+                <img style={{ width: phone?'30vw':'23vw', height: phone?'40rem':'', marginLeft: phone?'28rem':'39vw', position: 'absolute', top: phone?'36rem':'29vh' }} src={introphone} alt="phone" />
             </Grid>
 
             <Grid>
