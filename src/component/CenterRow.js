@@ -25,7 +25,7 @@ const CenterRow = () => {
     console.log('desktop'+desktop)
     console.log('largescreen'+largescreen)
     return (
-        <>
+        <Grid sx={{position:'relative'}}>
             <Grid sx={{ marginTop: phone?'10rem':'6vw' }}>
                 <Typography sx={{
                     color: '#FFF',
@@ -43,10 +43,10 @@ const CenterRow = () => {
             </Grid>
 
             <Grid >
-                <img style={{ width: phone?'30vw':'23vw', height: phone?'40rem':'', marginLeft: phone?'28rem':'39vw', position: 'absolute', top: phone?'36rem':'29vh' }} src={introphone} alt="phone" />
+                <img style={{ width: phone?'30vw':'23vw', height: phone?'40rem':'', marginLeft: phone?'28rem':'39vw', position: 'absolute', top: phone?'36rem':'-4vh' }} src={introphone} alt="phone" />
             </Grid>
 
-            <Grid>
+            <Grid >
                 <Typography sx={{
                     color: '#FFF',
                     textAlign: 'center',
@@ -58,13 +58,13 @@ const CenterRow = () => {
                     letterSpacing: '0.03125rem',
                     textTransform: 'uppercase',
                     position: 'absolute',
-                    top: phone?'55rem':'26rem',
-                    left: phone?'20rem':tablet? '34rem':laptop?'30rem':desktop?'34rem':''
+                    top: phone?'55rem':'',
+                    left: '36vw',
                 }}>
                     APP
                 </Typography>
             </Grid>
-        </>
+        </Grid>
     )
 }
 
